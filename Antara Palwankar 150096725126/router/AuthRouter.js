@@ -1,8 +1,7 @@
 const express = require('express');
 const passport = require('passport');
-const User = require('../../models/User');
+const User = require('../models/User');
 const isAuthenticated = require('../middleware/authMiddleware');
-
 const router = express.Router();
 
 router.get('/', isAuthenticated, (request, response) => {

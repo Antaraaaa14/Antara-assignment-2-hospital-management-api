@@ -3,9 +3,9 @@ const passport = require('passport');
 const LocalStrategy = require('passport-local').Strategy;
 const db = require('./config/db');
 const User = require('./models/User');
-const authRouter = require('./Antara Palwankar 150096725126/router/AuthRouter');
-const hospitalRouter = require('./Antara Palwankar 150096725126/router/HospitalRouter');
-const isAuthenticated = require('./Antara Palwankar 150096725126/middleware/authMiddleware');
+const authRouter = require('./router/AuthRouter');
+const hospitalRouter = require('./router/HospitalRouter');
+const isAuthenticated = require('./middleware/authMiddleware');
 
 const app = express();
 app.use(express.json());
